@@ -1,15 +1,21 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Заголовок страницы</title>
-    </head>
-    <body>
-        <h2>
-            <a href="#"><b>Коала</b> — Википедия</a>
-            <br>
-            <small>
-                <small>ru.wikipedia.org>Коала</small>
-            </small>
-        </h2>
-        <p><b>Коaла</b> (лат. Phascolarctos cinereus) — вид сумчатых, обитающий в Австралии. Единственный современный представитель семейства коаловых ... <a href="#">Читать ещё.</a></p>
-    </body>
+<head>
+  <title>Пример подключения плеера 1</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <div id="player" style="width: 800px; height: 600px;">
+    <div class="js-video-container" style="width: 100%; height: 100%"></div>
+    <!-- Here can be placed player controls: play and volume buttons -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
+  <script src="player.js"></script>
+  <button>Play!</button>
+  <script type="text/javascript">
+    createPlayer({elementId: 'player'});
+  </script>
+
+</body>
 </html>
