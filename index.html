@@ -4,33 +4,57 @@
   <title>Пример подключения плеера 1</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+  <style>
+    .player-container {
+      width: 800px;
+      height: 600px;
+    }
+    .video-wrapper {
+      width: 100%;
+      height: 100%;
+    }
+    .controls {
+      background-color: black;
+    }
+    .button-group {
+      position: relative;
+      width: 40px;
+      height: 40px;
+    }
+    .control-button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      cursor: pointer;
+      color: white;
+      background-color: transparent;
+      text-align: center;
+      line-height: 40px;
+    }
+  </style>
 </head>
 <body>
-  
-
-  <div id="player" style="width: 800px; height: 600px;">
-    <div class="js-video-container" style="width: 100%; height: 100%">
-        
-    </div>
-    <div style="background-color: black;">
-      <div style="position: relative; width: 40px; height: 40px;">
-          <button class="btn js-play-button" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; cursor: pointer; color: white; background-color: transparent; text-align: center; line-height: 40px;">
+  <div id="player" class="player-container">
+    <div class="js-video-container video-wrapper"></div>
+    <div class="controls">
+      <div class="button-group">
+          <button class="control-button js-play-button">
               <span class="fa fa-play"></span>
           </button>
-          <button class="btn js-pause-button" hidden style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; cursor: pointer; color: white; background-color: transparent; text-align: center; line-height: 40px;">
+          <button class="control-button js-pause-button">
               <span class="fa fa-pause"></span>
           </button>
       </div>
     </div>
-    <!-- Here can be placed player controls: play and volume buttons -->
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
-  <script src="player.js"></script>
-  
+  <script src="player.js"></script>  
   <script type="text/javascript">
     createPlayer({elementId: 'player'});
   </script>
-
 </body>
 </html>
