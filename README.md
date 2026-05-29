@@ -1,13 +1,21 @@
 # Videoplayer
 
-Custom video player built on [Playable.js](https://playable.io/).
+Учебный проект с курса [Devman.org](https://devman.org).
 
-![player screenshot](screenshot.png)
+Кастомный видеоплеер на [Playable.js](https://playable.io/).
 
-## How to run
+![скриншот плеера](screenshot.png)
+
+## Требования
+
+```bash
+pip install livereload
+```
+
+## Как запустить
 
 ```bash
 python server.py
 ```
 
-Open `http://localhost:5555` in browser.
+Откройте `http://127.0.0.1:5500/` в браузере.
