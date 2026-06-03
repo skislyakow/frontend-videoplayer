@@ -16,8 +16,8 @@
 .button-group {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 7px 8px;
+  justify-content: left;
+  padding: 6px 8px;
 }
 .control-button {
   width: 31px;
@@ -64,14 +64,15 @@
   height: 5px;
   background-color: #555;
   cursor: pointer;
-  margin: 2 -20px 0 -12px;
   border-radius: 3px;
   align-self: center;
+  margin-left: -10px;
+  margin-right: -20px;
 }
 .progress-slider {
   width: 0%;
   height: 100%;
-  background-color: white;
+  background-color: #f8104d;
   border-radius: 3px;
 }
 .js-current-time {
