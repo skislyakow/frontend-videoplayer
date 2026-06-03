@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="player.css">
@@ -27,7 +27,11 @@
         <button class="control-button js-mute-button">
           <span class="fa fa-volume-up"></span>
         </button>
-        <div class="spacer"></div>
+        <span class="time-label js-current-time">00:00:00</span>
+        <div class="js-progress progress-bar">
+          <div class="js-progress-slider progress-slider"></div>
+        </div>
+        <span class="time-label js-duration">00:00:00</span>
         <button class="control-button js-fullscreen-button">
           <span class="fa fa-expand"></span>
         </button>

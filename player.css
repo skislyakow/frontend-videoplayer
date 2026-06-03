@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
+  justify-content: flex-end;
 }
 .video-wrapper {
   flex-grow: 1;
@@ -16,11 +17,11 @@
   display: flex;
   align-items: center;
   justify-content: left;
-  padding: 8px;
+  padding: 7px 8px;
 }
 .control-button {
-  width: 39px;
-  height: 32px;
+  width: 31px;
+  height: 31px;
   display: flex;
   align-items: center;
   border: none;
@@ -36,24 +37,54 @@
 .js-pause-button {
   justify-content: flex-start;
   padding-left: 2px;
-  padding-top: 4px;
 }
 .js-volume-button,
 .js-mute-button {
   justify-content: flex-start;
-  padding-left: 0px;
-  padding-top: 4px;
+  padding-left: 8px;
   margin-left: -1px;
 }
 .js-fullscreen-button {
   justify-content: flex-end;
   padding-right: 3px;
-  padding-top: 4px;
   margin-right: -1px;
 }
 .control-button[hidden] {
   display: none;
 }
-.spacer {
+.time-label {
+  color: white;
+  font-size: 17px;
+  padding: 0 20px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+}
+.time-separator {
+  color: white;
+  font-size: 14px;
+  opacity: 0.5;
+}
+.progress-bar {
   flex-grow: 1;
+  height: 4px;
+  background-color: #555;
+  cursor: pointer;
+  margin: 0 -20px 0 -12px;
+  border-radius: 3px;
+  align-self: center;
+}
+.progress-slider {
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  border-radius: 3px;
+}
+.js-current-time {
+  margin-left: -16px;
+}
+.js-duration {
+  margin-left: 10px;
+  margin-right: -22px;
 }
