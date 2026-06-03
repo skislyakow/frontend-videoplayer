@@ -16,7 +16,7 @@
 .button-group {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: flex-start;
   padding: 7px 8px;
 }
 .control-button {
@@ -35,12 +35,10 @@
 }
 .js-play-button,
 .js-pause-button {
-  justify-content: flex-start;
   padding-left: 2px;
 }
 .js-volume-button,
 .js-mute-button {
-  justify-content: flex-start;
   padding-left: 8px;
   margin-left: -1px;
 }
@@ -54,24 +52,19 @@
 }
 .time-label {
   color: white;
-  font-size: 17px;
-  padding: 0 20px;
+  font-size: 16px;
+  padding: 1px 21px 0;
   height: 31px;
   display: flex;
   align-items: center;
-  font-weight: 300;
-}
-.time-separator {
-  color: white;
-  font-size: 14px;
-  opacity: 0.5;
+  font-weight: 400;
 }
 .progress-bar {
   flex-grow: 1;
-  height: 4px;
+  height: 5px;
   background-color: #555;
   cursor: pointer;
-  margin: 0 -20px 0 -12px;
+  margin: 2 -20px 0 -12px;
   border-radius: 3px;
   align-self: center;
 }
