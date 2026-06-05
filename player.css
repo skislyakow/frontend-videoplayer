@@ -33,6 +33,12 @@
   line-height: 1;
   -webkit-text-stroke: 0.3px black;
 }
+.control-button::-moz-focus-inner {
+  border: 0;
+}
+.control-button:focus {
+  outline: none;
+}
 .js-play-button,
 .js-pause-button {
   padding-left: 2px;
