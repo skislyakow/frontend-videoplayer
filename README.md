@@ -2,7 +2,7 @@
 
 Кастомный видеоплеер на [Playable.js](https://playable.io/).
 
-Это готовый компонент, который можно встроить в любую HTML-страницу. jQuery, FontAwesome и Playable.js подключаются через CDN — серверная часть не нужна.
+Это готовый компонент, который можно встроить в любую HTML-страницу. jQuery, FontAwesome, Normalize.css и Playable.js подключаются через CDN — серверная часть не нужна.
 
 **Живое демо:** [skislyakow.github.io/frontend-videoplayer](https://skislyakow.github.io/frontend-videoplayer/)
 
@@ -37,7 +37,12 @@
       <button class="control-button js-mute-button">
         <span class="fa fa-volume-up"></span>
       </button>
-      <div class="spacer"></div>
+      <span class="time-label js-current-time">00:00:00</span>
+      <div class="js-progress progress-bar">
+        <div class="js-progress-slider progress-slider"></div>
+        <div class="js-progress-thumb progress-thumb"></div>
+      </div>
+      <span class="time-label js-duration">00:00:00</span>
       <button class="control-button js-fullscreen-button">
         <span class="fa fa-expand"></span>
       </button>
@@ -49,7 +54,11 @@
 ### 2. Подключите зависимости и стили в `<head>`
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 <link rel="stylesheet" href="player.css">
 ```
 
@@ -93,7 +102,11 @@ createPlayer({
 <head>
   <meta charset="utf-8">
   <title>Мой плеер</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="player.css">
 </head>
 <body>
@@ -113,7 +126,12 @@ createPlayer({
         <button class="control-button js-mute-button">
           <span class="fa fa-volume-up"></span>
         </button>
-        <div class="spacer"></div>
+        <span class="time-label js-current-time">00:00:00</span>
+        <div class="js-progress progress-bar">
+          <div class="js-progress-slider progress-slider"></div>
+          <div class="js-progress-thumb progress-thumb"></div>
+        </div>
+        <span class="time-label js-duration">00:00:00</span>
         <button class="control-button js-fullscreen-button">
           <span class="fa fa-expand"></span>
         </button>
@@ -135,7 +153,9 @@ createPlayer({
 
 - **jQuery** 3.4.1 (CDN)
 - **Playable.js** 2.10.3 (CDN)
-- **FontAwesome** 6.6.0 (CDN)
+- **FontAwesome** 4.7.0 (CDN)
+- **Normalize.css** 8.0.1 (CDN)
+- **Roboto** (Google Fonts)
 - Все современные браузеры
 
 ## Разработка

@@ -16,7 +16,7 @@
 .button-group {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: flex-start;
   padding: 6px 8px;
 }
 .control-button {
@@ -68,7 +68,6 @@
 .progress-bar {
   flex-grow: 1;
   height: 5px;
-  /*background-color: #555;*/
   cursor: pointer;
   border-radius: 3px;
   align-self: center;
