@@ -161,9 +161,11 @@ function createPlayer({
   (function activateProgressbar(){
     const $progress = $playerContainer.find('.js-progress');
     const $slider = $progress.find('.js-progress-slider');
+    const $thumb = $progress.find('.js-progress-thumb');
 
     function setSliderWidth(percentage){
       $slider.css("width", `${percentage}%`);
+      $thumb.css("left", `${percentage}%`);
     }
 
     function updateSliderWidth(){

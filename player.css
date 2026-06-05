@@ -62,12 +62,25 @@
 .progress-bar {
   flex-grow: 1;
   height: 5px;
-  background-color: #555;
+  /*background-color: #555;*/
   cursor: pointer;
   border-radius: 3px;
   align-self: center;
   margin-left: -10px;
   margin-right: -20px;
+  position: relative;
+}
+.progress-thumb {
+  width: 8px; 
+  height: 8px;
+  background: red;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% + 1px);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  left: 0%;
 }
 .progress-slider {
   width: 0%;
