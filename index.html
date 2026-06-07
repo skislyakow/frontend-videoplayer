@@ -28,12 +28,14 @@
         <button class="control-button js-mute-button">
           <span class="fa fa-volume-up"></span>
         </button>
-        <span class="time-label js-current-time">00:00:00</span>
-        <div class="js-progress progress-bar">
-          <div class="js-progress-slider progress-slider"></div>
-          <div class="js-progress-thumb progress-thumb"></div>
+        <div class="progress-group">
+          <span class="time-label js-current-time">00:00:00</span>        
+          <div class="js-progress progress-bar">
+            <div class="js-progress-slider progress-slider"></div>
+            <div class="js-progress-thumb progress-thumb"></div>
+          </div>
+          <span class="time-label js-duration">00:00:00</span>
         </div>
-        <span class="time-label js-duration">00:00:00</span>
         <button class="control-button js-fullscreen-button">
           <span class="fa fa-expand"></span>
         </button>
@@ -43,6 +45,6 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
   <script src="player.js"></script>  
-  <script>createPlayer({elementId: 'player'})</script>
+  <script>createPlayer({elementId: 'player'});</script>
 </body>
 </html>

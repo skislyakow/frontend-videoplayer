@@ -15,13 +15,15 @@
 }
 .button-group {
   display: flex;
-  align-items: center;
   justify-content: flex-start;
-  padding: 6px 8px;
+  column-gap: 2px;
+  position: relative;
+  top: -5px;
+  align-items: center;
 }
 .control-button {
-  width: 31px;
-  height: 31px;
+  width: 35px;
+  height: 35px;
   display: flex;
   align-items: center;
   border: none;
@@ -29,9 +31,8 @@
   color: white;
   background-color: transparent;
   font-size: 20px;
-  padding: 1px;
   line-height: 1;
-  -webkit-text-stroke: 0.3px black;
+  justify-content: center;
 }
 .control-button::-moz-focus-inner {
   border: 0;
@@ -39,31 +40,23 @@
 .control-button:focus {
   outline: none;
 }
-.js-play-button,
-.js-pause-button {
-  padding-left: 2px;
-}
-.js-volume-button,
-.js-mute-button {
-  padding-left: 8px;
-  margin-left: -1px;
-}
-.js-fullscreen-button {
-  justify-content: flex-end;
-  padding-right: 3px;
-  margin-right: -1px;
-}
 .control-button[hidden] {
   display: none;
 }
+
 .time-label {
   color: white;
   font-size: 16px;
-  padding: 1px 21px 0;
-  height: 31px;
   display: flex;
   align-items: center;
   font-weight: 400;
+  padding-top: 4px;
+}
+.progress-group {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 .progress-bar {
   flex-grow: 1;
@@ -71,9 +64,8 @@
   cursor: pointer;
   border-radius: 3px;
   align-self: center;
-  margin-left: -10px;
-  margin-right: -20px;
   position: relative;
+  top: 1px;
 }
 .progress-bar:hover .progress-thumb {
   opacity: 1;
@@ -99,10 +91,9 @@
   background-color: #f8104d;
   border-radius: 3px;
 }
-.js-current-time {
-  margin-left: -16px;
+.fa-volume-off {
+  padding-right: 10px;
 }
-.js-duration {
-  margin-left: 10px;
-  margin-right: -22px;
+.fa-expand {
+  padding-right: 1px;
 }
