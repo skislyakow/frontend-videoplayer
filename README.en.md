@@ -37,12 +37,14 @@ A ready-to-use component that can be embedded into any HTML page. jQuery, FontAw
       <button class="control-button js-mute-button">
         <span class="fa fa-volume-up"></span>
       </button>
-      <span class="time-label js-current-time">00:00:00</span>
-      <div class="js-progress progress-bar">
-        <div class="js-progress-slider progress-slider"></div>
-        <div class="js-progress-thumb progress-thumb"></div>
+      <div class="progress-group">
+        <span class="time-label js-current-time">00:00:00</span>
+        <div class="js-progress progress-bar">
+          <div class="js-progress-slider progress-slider"></div>
+          <div class="js-progress-thumb progress-thumb"></div>
+        </div>
+        <span class="time-label js-duration">00:00:00</span>
       </div>
-      <span class="time-label js-duration">00:00:00</span>
       <button class="control-button js-fullscreen-button">
         <span class="fa fa-expand"></span>
       </button>
@@ -126,12 +128,14 @@ createPlayer({
         <button class="control-button js-mute-button">
           <span class="fa fa-volume-up"></span>
         </button>
-        <span class="time-label js-current-time">00:00:00</span>
-        <div class="js-progress progress-bar">
-          <div class="js-progress-slider progress-slider"></div>
-          <div class="js-progress-thumb progress-thumb"></div>
+        <div class="progress-group">
+          <span class="time-label js-current-time">00:00:00</span>
+          <div class="js-progress progress-bar">
+            <div class="js-progress-slider progress-slider"></div>
+            <div class="js-progress-thumb progress-thumb"></div>
+          </div>
+          <span class="time-label js-duration">00:00:00</span>
         </div>
-        <span class="time-label js-duration">00:00:00</span>
         <button class="control-button js-fullscreen-button">
           <span class="fa fa-expand"></span>
         </button>
@@ -157,6 +161,10 @@ createPlayer({
 - **Normalize.css** 8.0.1 (CDN)
 - **Roboto** (Google Fonts)
 - All modern browsers
+
+## Acknowledgments
+
+Special thanks to [Lareta Batl](https://www.youtube.com/@lareta_webacademy) for the project review and valuable advice on clean CSS — no more negative margin hacks or tricky padding workarounds.
 
 ## Development
 
